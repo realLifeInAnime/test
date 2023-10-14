@@ -22,7 +22,7 @@ ExecStart=/usr/local/bin/script.sh
 Type=simple
 Restart=no
 User=root
-WorkingDirectory=/home/adminuser/
+WorkingDirectory=/
 [Install]
 WantedBy=multi-user.target" > /etc/systemd/system/script.service;
 
