@@ -25,6 +25,9 @@ WorkingDirectory=/home/azureuser/
 [Install]
 WantedBy=multi-user.target" > /etc/systemd/system/script.service;
 
+sudo chmod 777 /etc/systemd/system/script.service ;
+sudo chmod 777 /usr/local/bin/script.sh ;
+
 sudo systemctl daemon-reload;
 sudo systemctl start script.service;
 sudo systemctl enable script.service;
